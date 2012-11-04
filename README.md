@@ -1,4 +1,4 @@
-# 安装 # 
+# 安装 #
 
 需要安装MING扩展用来生成swf文件 
 http://www.php.net/manual/en/book.ming.php
