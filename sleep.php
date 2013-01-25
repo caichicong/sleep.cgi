@@ -127,7 +127,8 @@ OUTPUT;
 
         imagefill($im, 0, 0, $background_color);
         if(isset($_GET['text']))
-            imagestring($im, 4, 0, 0,  $_GET['text'], $text_color);
+            // array imagettftext ( resource $image , float $size , float $angle , int $x , int $y , int $color , string $fontfile , string $text )
+            imagettftext($im, 24, 0, 0, 100, $text_color, dirname(__FILE__) . DIRECTORY_SEPARATOR .'wqy-microhei.ttc', $_GET['text']);
         else
             imagestring($im, 4, 0, 0,  "$width x $height", $text_color);
 
