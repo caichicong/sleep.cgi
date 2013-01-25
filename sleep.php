@@ -126,7 +126,10 @@ OUTPUT;
         $background_color = imagecolorallocate($im, $r, $g, $b);
 
         imagefill($im, 0, 0, $background_color);
-        imagestring($im, 4, 0, 0,  "$width x $height", $text_color);
+        if(isset($_GET['text']))
+            imagestring($im, 4, 0, 0,  $_GET['text'], $text_color);
+        else
+            imagestring($im, 4, 0, 0,  "$width x $height", $text_color);
 
         if ("gif" == $type) {  
             imagegif($im);

@@ -31,6 +31,8 @@ fcolor : 图片文字颜色 格式 fff 或 ffffff
 
 bgcolor : 图片背景颜色 格式 fff 或 ffffff
 
+text: 图片文字
+
 # 例子 #
 
     sleep.php?type=gif&width=200&height=100&fcolor=fff&bgcolor=000&last=1
